@@ -54,6 +54,10 @@
 
 
 
+  
+  
+  <link rel="stylesheet" href="/lib/fancybox/source/jquery.fancybox.css">
+
 
 
 
@@ -91,7 +95,7 @@
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
     back2top: true,
     back2top_sidebar: false,
-    fancybox: false,
+    fancybox: true,
     fastclick: false,
     lazyload: false,
     tabs: true,
@@ -129,14 +133,14 @@
 <meta property="og:site_name" content="RangoBig">
 <meta property="og:description" content="jsp的运行原理及执行过程1、运行原理​    当第一次访问jsp页面时，会向一个servlet容器（tomcat等）发出请求，servlet容器先要把 jsp页面转化为servlet代码（.java），再编译成.class 文件 再进行调用。当再次访问jsp页面时  跳过翻译和编译的过程 直接调用  2、执行过程  1、 客户端发出请求 12345672、web容器将jsp转化为servlet代">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/04/01/jsp的运行原理及执行过程/E:/Blog/source/_posts/20171228112912790.png">
-<meta property="og:image" content="http://yoursite.com/2019/04/01/jsp的运行原理及执行过程/E:/Blog/source/_posts/20180201100243992.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/04/01/jsp的运行原理及执行过程/E:/Blog/source/_posts/20180201100314447.jpg">
-<meta property="og:updated_time" content="2019-04-01T07:12:42.895Z">
+<meta property="og:image" content="http://yoursite.com/2019/04/01/jsp的运行原理及执行过程/Blog/source/_posts/jsp的运行原理及执行过程/1.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/04/01/jsp的运行原理及执行过程/Blog/source/_posts/jsp的运行原理及执行过程/2.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/04/01/jsp的运行原理及执行过程/Blog/source/_posts/jsp的运行原理及执行过程/3.jpg">
+<meta property="og:updated_time" content="2019-04-04T12:46:12.135Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jsp的运行原理及执行过程">
 <meta name="twitter:description" content="jsp的运行原理及执行过程1、运行原理​    当第一次访问jsp页面时，会向一个servlet容器（tomcat等）发出请求，servlet容器先要把 jsp页面转化为servlet代码（.java），再编译成.class 文件 再进行调用。当再次访问jsp页面时  跳过翻译和编译的过程 直接调用  2、执行过程  1、 客户端发出请求 12345672、web容器将jsp转化为servlet代">
-<meta name="twitter:image" content="http://yoursite.com/2019/04/01/jsp的运行原理及执行过程/E:/Blog/source/_posts/20171228112912790.png">
+<meta name="twitter:image" content="http://yoursite.com/2019/04/01/jsp的运行原理及执行过程/Blog/source/_posts/jsp的运行原理及执行过程/1.jpg">
 
 
 
@@ -432,6 +436,15 @@
     </header>
 
     
+  
+  
+  
+  
+
+  
+
+  <a href="https://github.com/Rangobig" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewbox="0 0 250 250" style="fill: #222; color: #fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a>
+
 
 
     <main id="main" class="main">
@@ -500,12 +513,24 @@
                 
               
 
-              <time title="创建时间：2019-04-01 14:45:27 / 修改时间：15:12:42" itemprop="dateCreated datePublished" datetime="2019-04-01T14:45:27+08:00">2019-04-01</time>
+              <time title="创建时间：2019-04-01 14:45:27" itemprop="dateCreated datePublished" datetime="2019-04-01T14:45:27+08:00">2019-04-01</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-04 20:46:12" itemprop="dateModified" datetime="2019-04-04T20:46:12+08:00">2019-04-04</time>
               
             
           </span>
@@ -553,13 +578,13 @@
 
       
         <h1 id="jsp的运行原理及执行过程"><a href="#jsp的运行原理及执行过程" class="headerlink" title="jsp的运行原理及执行过程"></a>jsp的运行原理及执行过程</h1><h3 id="1、运行原理"><a href="#1、运行原理" class="headerlink" title="1、运行原理"></a>1、运行原理</h3><p>​    当第一次访问jsp页面时，会向一个servlet容器（tomcat等）发出请求，servlet容器先要把 jsp页面转化为servlet代码（.java），再编译成.class 文件 再进行调用。当再次访问jsp页面时  跳过翻译和编译的过程 直接调用</p>
-<p><img src="/2019/04/01/jsp的运行原理及执行过程/E:/Blog\source\_posts\20171228112912790.png" alt></p>
+<p><img src="/2019/04/01/jsp的运行原理及执行过程/Blog\source\_posts\jsp的运行原理及执行过程\1.jpg" alt="1"></p>
 <h3 id="2、执行过程"><a href="#2、执行过程" class="headerlink" title="2、执行过程"></a>2、执行过程</h3><p>  1、 客户端发出请求</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">2、web容器将jsp转化为servlet代码（.java）</span><br><span class="line"></span><br><span class="line">3、web容器将转化为servlet代码编译（.class）</span><br><span class="line"></span><br><span class="line">4、web容器加载编译后的代码并执行</span><br><span class="line"></span><br><span class="line">5、将执行结果响应给客户端</span><br></pre></td></tr></table></figure>
 <hr>
-<h2 id="JSP执行过程图解"><a href="#JSP执行过程图解" class="headerlink" title="JSP执行过程图解"></a>JSP执行过程图解</h2><p><img src="/2019/04/01/jsp的运行原理及执行过程/E:/Blog\source\_posts\20180201100243992.jpg" alt></p>
+<h2 id="JSP执行过程图解"><a href="#JSP执行过程图解" class="headerlink" title="JSP执行过程图解"></a>JSP执行过程图解</h2><p><img src="/2019/04/01/jsp的运行原理及执行过程/Blog\source\_posts\jsp的运行原理及执行过程\2.jpg" alt="2"></p>
 <h2 id="JSP的多线程思考"><a href="#JSP的多线程思考" class="headerlink" title="JSP的多线程思考"></a>JSP的多线程思考</h2><p>当多个用户请求一个JSP页面时，Tomcat服务器为每个客户启动一个线程，该线程负责执行常住内存的字节码文件来响应客户的请求。这些线程有Tomcat服务器来管理。</p>
-<p><img src="/2019/04/01/jsp的运行原理及执行过程/E:/Blog\source\_posts\20180201100314447.jpg" alt></p>
+<p><img src="/2019/04/01/jsp的运行原理及执行过程/Blog\source\_posts\jsp的运行原理及执行过程\3.jpg" alt="3"></p>
 <p>这些线程共享JSP页面的成员变量（实例变量），因此任何一个用户对JSP页面成员变量的操作，都会影响到其他用户，这可能导致线程的不安全。为了保证线程安全，我们不要使用(实例变量+类变量),就这么简单。也可以使用synchronized同步方法,但是这样效率不高。</p>
 <p>方法中的局部变量是不会影响线程安全的,因为他们是在栈上分配空间,而且每个线程都有自己私有的栈空间，运行在不同线程中的java程序片中的局部变量互不干扰。</p>
 
@@ -579,6 +604,30 @@
     
     
 
+    
+      <div>
+        
+
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>东东</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="http://yoursite.com/2019/04/01/jsp的运行原理及执行过程/" title="jsp的运行原理及执行过程">http://yoursite.com/2019/04/01/jsp的运行原理及执行过程/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
     
 	
 	<div>
@@ -951,6 +1000,8 @@
 
 
 
+  
+
 
 
   
@@ -982,6 +1033,9 @@
 
   
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/fancybox/source/jquery.fancybox.pack.js"></script>
 
   
   <script src="/lib/three/three.min.js"></script>
